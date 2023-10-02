@@ -13,6 +13,8 @@
 		14603BDC2AC6C3C100680B64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14603BDA2AC6C3C100680B64 /* Main.storyboard */; };
 		14603BDE2AC6C3C100680B64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14603BDD2AC6C3C100680B64 /* Assets.xcassets */; };
 		14603BE12AC6C3C100680B64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14603BDF2AC6C3C100680B64 /* LaunchScreen.storyboard */; };
+		14681B572ACB3260001DA5A3 /* CricketMatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14681B562ACB3260001DA5A3 /* CricketMatchViewModel.swift */; };
+		14681B592ACB32DD001DA5A3 /* CricketMatchDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14681B582ACB32DD001DA5A3 /* CricketMatchDatasource.swift */; };
 		14EDC7052AC9E79E0070665B /* CricketMatchBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EDC7042AC9E79E0070665B /* CricketMatchBaseModel.swift */; };
 		14EDC7072AC9E7FF0070665B /* CricketMatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EDC7062AC9E7FF0070665B /* CricketMatchModel.swift */; };
 		14F75EFC2ACAAB4B007E4BBF /* SeriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F75EFB2ACAAB4B007E4BBF /* SeriesModel.swift */; };
@@ -42,6 +44,8 @@
 		14603BDD2AC6C3C100680B64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14603BE02AC6C3C100680B64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14603BE22AC6C3C100680B64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14681B562ACB3260001DA5A3 /* CricketMatchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CricketMatchViewModel.swift; sourceTree = "<group>"; };
+		14681B582ACB32DD001DA5A3 /* CricketMatchDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CricketMatchDatasource.swift; sourceTree = "<group>"; };
 		14EDC7042AC9E79E0070665B /* CricketMatchBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CricketMatchBaseModel.swift; sourceTree = "<group>"; };
 		14EDC7062AC9E7FF0070665B /* CricketMatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CricketMatchModel.swift; sourceTree = "<group>"; };
 		14F75EFB2ACAAB4B007E4BBF /* SeriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesModel.swift; sourceTree = "<group>"; };
@@ -150,6 +154,8 @@
 		1471F5272AC9BC9800C94DFC /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				14681B562ACB3260001DA5A3 /* CricketMatchViewModel.swift */,
+				14681B582ACB32DD001DA5A3 /* CricketMatchDatasource.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -274,6 +280,7 @@
 				14603BD52AC6C3C100680B64 /* AppDelegate.swift in Sources */,
 				14F75EFE2ACAACBF007E4BBF /* VenueModel.swift in Sources */,
 				14F75F222ACAE757007E4BBF /* PlayerInfoModel.swift in Sources */,
+				14681B592ACB32DD001DA5A3 /* CricketMatchDatasource.swift in Sources */,
 				14F75F162ACADBBF007E4BBF /* MatchNotesModel.swift in Sources */,
 				14F75F142ACACEAB007E4BBF /* PowerPlayModel.swift in Sources */,
 				14F75F0C2ACABBC1007E4BBF /* PartnershipModel.swift in Sources */,
@@ -284,6 +291,7 @@
 				14F75F082ACAB80B007E4BBF /* BatsmanScoredModel.swift in Sources */,
 				1429B26B2ACAFDC800DC68F8 /* NetworkServices.swift in Sources */,
 				14F75F122ACABF66007E4BBF /* FallOfWicketsModel.swift in Sources */,
+				14681B572ACB3260001DA5A3 /* CricketMatchViewModel.swift in Sources */,
 				14F75F002ACAAD98007E4BBF /* OfficialsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

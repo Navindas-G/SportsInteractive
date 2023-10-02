@@ -7,12 +7,12 @@
 
 import Foundation
 
-protocol NetworkServicesProtocol: NSObjectProtocol {
-    static func getData(for urlString: String) async throws -> Data
+fileprivate protocol NetworkServicesProtocol: NSObjectProtocol {
+    func getData(for urlString: String) async throws -> Data
 }
 
 class NetworkServices: NSObject, NetworkServicesProtocol {
-    static func getData(for urlString: String) async throws -> Data {
+    func getData(for urlString: String) async throws -> Data {
         let session = URLSession(configuration: .default)
         let (data,response) = try await session.data(for: URLRequest(url: URL(string: urlString)!))
         debugPrint("Received response : \(response)")
