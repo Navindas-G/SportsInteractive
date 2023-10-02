@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1429B26B2ACAFDC800DC68F8 /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429B26A2ACAFDC800DC68F8 /* NetworkServices.swift */; };
 		14603BD52AC6C3C100680B64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14603BD42AC6C3C100680B64 /* AppDelegate.swift */; };
 		14603BD92AC6C3C100680B64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14603BD82AC6C3C100680B64 /* ViewController.swift */; };
 		14603BDC2AC6C3C100680B64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14603BDA2AC6C3C100680B64 /* Main.storyboard */; };
@@ -14,9 +15,26 @@
 		14603BE12AC6C3C100680B64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14603BDF2AC6C3C100680B64 /* LaunchScreen.storyboard */; };
 		14EDC7052AC9E79E0070665B /* CricketMatchBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EDC7042AC9E79E0070665B /* CricketMatchBaseModel.swift */; };
 		14EDC7072AC9E7FF0070665B /* CricketMatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EDC7062AC9E7FF0070665B /* CricketMatchModel.swift */; };
+		14F75EFC2ACAAB4B007E4BBF /* SeriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F75EFB2ACAAB4B007E4BBF /* SeriesModel.swift */; };
+		14F75EFE2ACAACBF007E4BBF /* VenueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F75EFD2ACAACBF007E4BBF /* VenueModel.swift */; };
+		14F75F002ACAAD98007E4BBF /* OfficialsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F75EFF2ACAAD98007E4BBF /* OfficialsModel.swift */; };
+		14F75F022ACAB340007E4BBF /* CricketMatchDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F75F012ACAB340007E4BBF /* CricketMatchDetailModel.swift */; };
+		14F75F062ACAB5AB007E4BBF /* InningsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F75F052ACAB5AB007E4BBF /* InningsModel.swift */; };
+		14F75F082ACAB80B007E4BBF /* BatsmanScoredModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F75F072ACAB80B007E4BBF /* BatsmanScoredModel.swift */; };
+		14F75F0A2ACABAB2007E4BBF /* BatsmenPartnershipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F75F092ACABAB2007E4BBF /* BatsmenPartnershipModel.swift */; };
+		14F75F0C2ACABBC1007E4BBF /* PartnershipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F75F0B2ACABBC1007E4BBF /* PartnershipModel.swift */; };
+		14F75F0E2ACABD31007E4BBF /* BowlerEconomyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F75F0D2ACABD31007E4BBF /* BowlerEconomyModel.swift */; };
+		14F75F122ACABF66007E4BBF /* FallOfWicketsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F75F112ACABF66007E4BBF /* FallOfWicketsModel.swift */; };
+		14F75F142ACACEAB007E4BBF /* PowerPlayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F75F132ACACEAB007E4BBF /* PowerPlayModel.swift */; };
+		14F75F162ACADBBF007E4BBF /* MatchNotesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F75F152ACADBBF007E4BBF /* MatchNotesModel.swift */; };
+		14F75F1A2ACAE43A007E4BBF /* TeamInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F75F192ACAE43A007E4BBF /* TeamInfoModel.swift */; };
+		14F75F222ACAE757007E4BBF /* PlayerInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F75F212ACAE757007E4BBF /* PlayerInfoModel.swift */; };
+		14F75F242ACAE83E007E4BBF /* BattingStyleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F75F232ACAE83E007E4BBF /* BattingStyleModel.swift */; };
+		14F75F262ACAE95B007E4BBF /* BowlingStyleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F75F252ACAE95B007E4BBF /* BowlingStyleModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1429B26A2ACAFDC800DC68F8 /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
 		14603BD12AC6C3C100680B64 /* SportInteractive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportInteractive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14603BD42AC6C3C100680B64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14603BD82AC6C3C100680B64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +44,22 @@
 		14603BE22AC6C3C100680B64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14EDC7042AC9E79E0070665B /* CricketMatchBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CricketMatchBaseModel.swift; sourceTree = "<group>"; };
 		14EDC7062AC9E7FF0070665B /* CricketMatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CricketMatchModel.swift; sourceTree = "<group>"; };
+		14F75EFB2ACAAB4B007E4BBF /* SeriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesModel.swift; sourceTree = "<group>"; };
+		14F75EFD2ACAACBF007E4BBF /* VenueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueModel.swift; sourceTree = "<group>"; };
+		14F75EFF2ACAAD98007E4BBF /* OfficialsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficialsModel.swift; sourceTree = "<group>"; };
+		14F75F012ACAB340007E4BBF /* CricketMatchDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CricketMatchDetailModel.swift; sourceTree = "<group>"; };
+		14F75F052ACAB5AB007E4BBF /* InningsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InningsModel.swift; sourceTree = "<group>"; };
+		14F75F072ACAB80B007E4BBF /* BatsmanScoredModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatsmanScoredModel.swift; sourceTree = "<group>"; };
+		14F75F092ACABAB2007E4BBF /* BatsmenPartnershipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatsmenPartnershipModel.swift; sourceTree = "<group>"; };
+		14F75F0B2ACABBC1007E4BBF /* PartnershipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnershipModel.swift; sourceTree = "<group>"; };
+		14F75F0D2ACABD31007E4BBF /* BowlerEconomyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlerEconomyModel.swift; sourceTree = "<group>"; };
+		14F75F112ACABF66007E4BBF /* FallOfWicketsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallOfWicketsModel.swift; sourceTree = "<group>"; };
+		14F75F132ACACEAB007E4BBF /* PowerPlayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerPlayModel.swift; sourceTree = "<group>"; };
+		14F75F152ACADBBF007E4BBF /* MatchNotesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchNotesModel.swift; sourceTree = "<group>"; };
+		14F75F192ACAE43A007E4BBF /* TeamInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInfoModel.swift; sourceTree = "<group>"; };
+		14F75F212ACAE757007E4BBF /* PlayerInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInfoModel.swift; sourceTree = "<group>"; };
+		14F75F232ACAE83E007E4BBF /* BattingStyleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattingStyleModel.swift; sourceTree = "<group>"; };
+		14F75F252ACAE95B007E4BBF /* BowlingStyleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingStyleModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1429B2692ACAFDB200DC68F8 /* NetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+				1429B26A2ACAFDC800DC68F8 /* NetworkServices.swift */,
+			);
+			path = NetworkServices;
+			sourceTree = "<group>";
+		};
 		14603BC82AC6C3C100680B64 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +100,7 @@
 		14603BD32AC6C3C100680B64 /* SportInteractive */ = {
 			isa = PBXGroup;
 			children = (
+				1429B2692ACAFDB200DC68F8 /* NetworkServices */,
 				14EDC7032AC9E7760070665B /* Model */,
 				1471F5272AC9BC9800C94DFC /* ViewModel */,
 				1471F5242AC9BC7100C94DFC /* PlayersInfo */,
@@ -129,7 +172,23 @@
 			isa = PBXGroup;
 			children = (
 				14EDC7042AC9E79E0070665B /* CricketMatchBaseModel.swift */,
+				14F75F012ACAB340007E4BBF /* CricketMatchDetailModel.swift */,
 				14EDC7062AC9E7FF0070665B /* CricketMatchModel.swift */,
+				14F75EFB2ACAAB4B007E4BBF /* SeriesModel.swift */,
+				14F75EFD2ACAACBF007E4BBF /* VenueModel.swift */,
+				14F75EFF2ACAAD98007E4BBF /* OfficialsModel.swift */,
+				14F75F052ACAB5AB007E4BBF /* InningsModel.swift */,
+				14F75F072ACAB80B007E4BBF /* BatsmanScoredModel.swift */,
+				14F75F092ACABAB2007E4BBF /* BatsmenPartnershipModel.swift */,
+				14F75F0B2ACABBC1007E4BBF /* PartnershipModel.swift */,
+				14F75F0D2ACABD31007E4BBF /* BowlerEconomyModel.swift */,
+				14F75F112ACABF66007E4BBF /* FallOfWicketsModel.swift */,
+				14F75F132ACACEAB007E4BBF /* PowerPlayModel.swift */,
+				14F75F152ACADBBF007E4BBF /* MatchNotesModel.swift */,
+				14F75F192ACAE43A007E4BBF /* TeamInfoModel.swift */,
+				14F75F212ACAE757007E4BBF /* PlayerInfoModel.swift */,
+				14F75F232ACAE83E007E4BBF /* BattingStyleModel.swift */,
+				14F75F252ACAE95B007E4BBF /* BowlingStyleModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -206,9 +265,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				14603BD92AC6C3C100680B64 /* ViewController.swift in Sources */,
+				14F75F0A2ACABAB2007E4BBF /* BatsmenPartnershipModel.swift in Sources */,
 				14EDC7072AC9E7FF0070665B /* CricketMatchModel.swift in Sources */,
+				14F75F062ACAB5AB007E4BBF /* InningsModel.swift in Sources */,
+				14F75F0E2ACABD31007E4BBF /* BowlerEconomyModel.swift in Sources */,
+				14F75F262ACAE95B007E4BBF /* BowlingStyleModel.swift in Sources */,
+				14F75F242ACAE83E007E4BBF /* BattingStyleModel.swift in Sources */,
 				14603BD52AC6C3C100680B64 /* AppDelegate.swift in Sources */,
+				14F75EFE2ACAACBF007E4BBF /* VenueModel.swift in Sources */,
+				14F75F222ACAE757007E4BBF /* PlayerInfoModel.swift in Sources */,
+				14F75F162ACADBBF007E4BBF /* MatchNotesModel.swift in Sources */,
+				14F75F142ACACEAB007E4BBF /* PowerPlayModel.swift in Sources */,
+				14F75F0C2ACABBC1007E4BBF /* PartnershipModel.swift in Sources */,
 				14EDC7052AC9E79E0070665B /* CricketMatchBaseModel.swift in Sources */,
+				14F75EFC2ACAAB4B007E4BBF /* SeriesModel.swift in Sources */,
+				14F75F022ACAB340007E4BBF /* CricketMatchDetailModel.swift in Sources */,
+				14F75F1A2ACAE43A007E4BBF /* TeamInfoModel.swift in Sources */,
+				14F75F082ACAB80B007E4BBF /* BatsmanScoredModel.swift in Sources */,
+				1429B26B2ACAFDC800DC68F8 /* NetworkServices.swift in Sources */,
+				14F75F122ACABF66007E4BBF /* FallOfWicketsModel.swift in Sources */,
+				14F75F002ACAAD98007E4BBF /* OfficialsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
