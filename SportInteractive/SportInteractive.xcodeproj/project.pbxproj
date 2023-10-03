@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1429B26B2ACAFDC800DC68F8 /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429B26A2ACAFDC800DC68F8 /* NetworkServices.swift */; };
+		144390632ACC6C9F0085A305 /* PlayerInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144390622ACC6C9F0085A305 /* PlayerInfoVC.swift */; };
+		144390652ACC6D3C0085A305 /* PlayerInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144390642ACC6D3C0085A305 /* PlayerInfoTableViewCell.swift */; };
+		144B13EB2ACCA161006AD8C8 /* PopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144B13EA2ACCA161006AD8C8 /* PopupVC.swift */; };
 		14603BD52AC6C3C100680B64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14603BD42AC6C3C100680B64 /* AppDelegate.swift */; };
 		14603BD92AC6C3C100680B64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14603BD82AC6C3C100680B64 /* ViewController.swift */; };
 		14603BDC2AC6C3C100680B64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14603BDA2AC6C3C100680B64 /* Main.storyboard */; };
@@ -41,6 +44,9 @@
 
 /* Begin PBXFileReference section */
 		1429B26A2ACAFDC800DC68F8 /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
+		144390622ACC6C9F0085A305 /* PlayerInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInfoVC.swift; sourceTree = "<group>"; };
+		144390642ACC6D3C0085A305 /* PlayerInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInfoTableViewCell.swift; sourceTree = "<group>"; };
+		144B13EA2ACCA161006AD8C8 /* PopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupVC.swift; sourceTree = "<group>"; };
 		14603BD12AC6C3C100680B64 /* SportInteractive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportInteractive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14603BD42AC6C3C100680B64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14603BD82AC6C3C100680B64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +100,14 @@
 			path = NetworkServices;
 			sourceTree = "<group>";
 		};
+		144B13E92ACCA144006AD8C8 /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				144B13EA2ACCA161006AD8C8 /* PopupVC.swift */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
 		14603BC82AC6C3C100680B64 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +127,7 @@
 		14603BD32AC6C3C100680B64 /* SportInteractive */ = {
 			isa = PBXGroup;
 			children = (
+				144B13E92ACCA144006AD8C8 /* Popup */,
 				149084F62ACC226B00DD253F /* Util */,
 				1429B2692ACAFDB200DC68F8 /* NetworkServices */,
 				14EDC7032AC9E7760070665B /* Model */,
@@ -174,6 +189,7 @@
 		1471F5282AC9BCB100C94DFC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				144390622ACC6C9F0085A305 /* PlayerInfoVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -181,6 +197,7 @@
 		1471F5292AC9BCBA00C94DFC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				144390642ACC6D3C0085A305 /* PlayerInfoTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -293,6 +310,7 @@
 				14603BD92AC6C3C100680B64 /* ViewController.swift in Sources */,
 				14F75F0A2ACABAB2007E4BBF /* BatsmenPartnershipModel.swift in Sources */,
 				14EDC7072AC9E7FF0070665B /* CricketMatchModel.swift in Sources */,
+				144B13EB2ACCA161006AD8C8 /* PopupVC.swift in Sources */,
 				14F75F062ACAB5AB007E4BBF /* InningsModel.swift in Sources */,
 				14F75F0E2ACABD31007E4BBF /* BowlerEconomyModel.swift in Sources */,
 				14F75F262ACAE95B007E4BBF /* BowlingStyleModel.swift in Sources */,
@@ -301,12 +319,14 @@
 				14F75EFE2ACAACBF007E4BBF /* VenueModel.swift in Sources */,
 				149084F52ACC0AE000DD253F /* NetworkError.swift in Sources */,
 				14F75F222ACAE757007E4BBF /* PlayerInfoModel.swift in Sources */,
+				144390632ACC6C9F0085A305 /* PlayerInfoVC.swift in Sources */,
 				14681B592ACB32DD001DA5A3 /* CricketMatchDatasource.swift in Sources */,
 				14F75F162ACADBBF007E4BBF /* MatchNotesModel.swift in Sources */,
 				14F75F142ACACEAB007E4BBF /* PowerPlayModel.swift in Sources */,
 				14F75F0C2ACABBC1007E4BBF /* PartnershipModel.swift in Sources */,
 				14EDC7052AC9E79E0070665B /* CricketMatchBaseModel.swift in Sources */,
 				14F75EFC2ACAAB4B007E4BBF /* SeriesModel.swift in Sources */,
+				144390652ACC6D3C0085A305 /* PlayerInfoTableViewCell.swift in Sources */,
 				149084F82ACC227C00DD253F /* Constant.swift in Sources */,
 				149084FC2ACC444D00DD253F /* Extension.swift in Sources */,
 				149084FA2ACC333D00DD253F /* MatchDetailTableViewCell.swift in Sources */,

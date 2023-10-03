@@ -66,5 +66,17 @@ extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100.0
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        debugPrint("Index selected : \(indexPath.row)")
+        
+        let playerInfoVC = self.storyboard?.instantiateViewController(withIdentifier: "PlayerInfoVC") as! PlayerInfoVC
+        playerInfoVC.playerList = self.matchDetailsList[indexPath.row].teams?.getPlayersList() ?? []
+        playerInfoVC.teamOneName = (self.matchDetailsList[indexPath.row].teams?.getTeamsName() ?? "").components(separatedBy: " vs ").first ?? ""
+        playerInfoVC.teamTwoName = (self.matchDetailsList[indexPath.row].teams?.getTeamsName() ?? "").components(separatedBy: " vs ").last ?? ""
+        playerInfoVC.modalTransitionStyle = .flipHorizontal
+        playerInfoVC.modalPresentationStyle = .overCurrentContext
+        self.present(playerInfoVC, animated: true)
+    }
 }
 

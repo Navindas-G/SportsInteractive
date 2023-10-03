@@ -7,16 +7,10 @@
 
 import Foundation
 
-struct PlayerInfoModel: Decodable {
-    /*
-     "Position": "5",
-     "Name_Full": "Dinesh Karthik",
-     "Iscaptain": true,
-     "Iskeeper": true,
-     "Batting"
-     "Bowling"
-     */
-    
+struct PlayerInfoModel {
+    let id: String?
+    let teamFullName: String?
+    let teamShortName: String?
     let position: String?
     let fullName: String?
     let isCaptain: Bool?

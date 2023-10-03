@@ -122,4 +122,73 @@ extension [String:Any] {
         }
         return namesSeparatedWithComma
     }
+    
+    func getPlayersList() -> [PlayerInfoModel] {
+        var playersList: [PlayerInfoModel] = []
+        
+        /*
+         "Position": "5",
+         "Name_Full": "Shoaib Malik",
+         "Iscaptain": true,
+         "Iskeeper": true,
+         "Batting": {
+           "Style": "RHB",
+           "Average": "35.17",
+           "Strikerate": "81.65",
+           "Runs": "7317"
+         },
+         "Bowling": {
+           "Style": "OB",
+           "Average": "39.11",
+           "Economyrate": "4.65",
+           "Wickets": "156"
+         },
+         */
+        
+        for (_,value) in self {
+            guard let dictionary = value as? [String:Any] else {
+                return []
+            }
+            
+            guard let playersDictionary = dictionary["Players"] as? [String:Any] else {
+                return []
+            }
+            
+            for (key, value) in playersDictionary {
+                let id = key
+                guard let infoDictionary = value as? [String:Any] else {
+                    return []
+                }
+                
+                let position = infoDictionary["Position"] as? String ?? ""
+                let fullName = infoDictionary["Name_Full"] as? String ?? ""
+                let isCaptain = infoDictionary["Iscaptain"] as? Bool ?? false
+                let isKeeper = infoDictionary["Iskeeper"] as? Bool ?? false
+                
+                let battingDictionary = infoDictionary["Batting"] as? [String:Any] ?? [:]
+                let bowlingDictionary = infoDictionary["Bowling"] as? [String:Any] ?? [:]
+                
+                let battingStyle = battingDictionary["Style"] as? String ?? ""
+                let battingAverage = battingDictionary["Average"] as? String ?? ""
+                let strikeRate = battingDictionary["Strikerate"] as? String ?? ""
+                let runs = battingDictionary["Runs"] as? String ?? ""
+                
+                let bowlingStyle = bowlingDictionary["Style"] as? String ?? ""
+                let bowlingAverage = bowlingDictionary["Average"] as? String ?? ""
+                let economyRate = bowlingDictionary["Economyrate"] as? String ?? ""
+                let wickets = bowlingDictionary["Wickets"] as? String ?? ""
+                
+                let battingStyleModel = BattingStyleModel(style: battingStyle, average: battingAverage, strikerRate: strikeRate, runs: runs)
+                let bowlingStyleModel = BowlingStyleModel(style: bowlingStyle, average: bowlingAverage, economyRate: economyRate, wickets: wickets)
+                
+                let teamFullName = dictionary["Name_Full"] as? String ?? ""
+                let teamShortName = dictionary["Name_Short"] as? String ?? ""
+                
+                let playerInfoModel = PlayerInfoModel(id: id,teamFullName: teamFullName,teamShortName: teamShortName, position: position, fullName: fullName, isCaptain: isCaptain, isKeeper: isKeeper, battingStyle: battingStyleModel, bowlingStyle: bowlingStyleModel)
+                
+                playersList.append(playerInfoModel)
+            }
+        }
+        return playersList
+    }
 }

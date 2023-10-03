@@ -26,6 +26,8 @@ class MatchDetailTableViewCell: UITableViewCell {
         self.mainView.layer.shadowOpacity = 2.0
         self.mainView.layer.masksToBounds = false
         self.mainView.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        
+        self.selectionStyle = .none
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
