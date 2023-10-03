@@ -10,12 +10,21 @@ import Foundation
 class CricketMatchViewModel {
     private let dataSource: CricketMatchDatasource
     
+    var onDataSuccess : ((_ model: CricketMatchBaseModel) -> Void)!
+    var onDataFailure : ((_ message: String) -> Void)!
+    
     init(dataSource: CricketMatchDatasource) {
         self.dataSource = dataSource
     }
     
-    func getMatchDetails(urlString: String) async throws -> CricketMatchBaseModel {
-        let model = try! await self.dataSource.getCricketMatchesData(for: urlString)
-        return model
+    func getMatchData(for urlString: String) {
+        Task {
+            do{
+                let model = try await self.dataSource.getCricketMatchesData(for: urlString)
+                self.onDataSuccess(model)
+            } catch let caughtError {
+                self.onDataFailure(caughtError.localizedDescription)
+            }
+        }
     }
 }

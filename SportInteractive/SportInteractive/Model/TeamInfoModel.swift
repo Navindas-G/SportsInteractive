@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct TeamInfoModel: Decodable {
-    let fullName: String?
-    let shortName: String?
-    let players: [String: PlayerInfoModel]?
-    
-}
+//struct TeamInfoModel: Decodable {
+//    let fullName: String?
+//    let shortName: String?
+//    let players: [String: Any]?
+//    
+//}

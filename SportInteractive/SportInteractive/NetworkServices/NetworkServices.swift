@@ -16,6 +16,6 @@ class NetworkServices: NSObject, NetworkServicesProtocol {
         let session = URLSession(configuration: .default)
         let (data,response) = try await session.data(for: URLRequest(url: URL(string: urlString)!))
         debugPrint("Received response : \(response)")
-        return data
+        return try mapResponse(response: (data, response))
     }
 }
