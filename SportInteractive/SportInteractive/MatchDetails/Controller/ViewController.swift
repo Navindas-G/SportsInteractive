@@ -46,7 +46,8 @@ class ViewController: UIViewController {
         
         self.matchViewModel.onDataSuccess = {[weak self] model in
             guard let ws = self else {return}
-            ws.matchDetailsList.append(model)
+            guard let baseMatchModel = model else {return}
+            ws.matchDetailsList.append(baseMatchModel)
             ws.matchDetailsList.sort { ($0.matchDetail?.match?.date ?? "") < ($1.matchDetail?.match?.date ?? "") }
             DispatchQueue.main.async {
                 if ws.matchDetailsList.count > 0 {

@@ -7,11 +7,11 @@
 
 import Foundation
 
-class CricketMatchViewModel {
+open class CricketMatchViewModel {
     private let dataSource: CricketMatchDatasource
     
-    var onDataSuccess : ((_ model: CricketMatchBaseModel) -> Void)!
-    var onDataFailure : ((_ message: String) -> Void)!
+    var onDataSuccess : ((_ model: CricketMatchBaseModel?) -> Void)!
+    var onDataFailure : ((_ message: String?) -> Void)!
     
     init(dataSource: CricketMatchDatasource) {
         self.dataSource = dataSource
@@ -21,7 +21,11 @@ class CricketMatchViewModel {
         Task {
             do{
                 let model = try await self.dataSource.getCricketMatchesData(for: urlString)
-                self.onDataSuccess(model)
+                guard let cricketMatchModel = model else {
+                    self.onDataFailure("No data found")
+                    return
+                }
+                self.onDataSuccess(cricketMatchModel)
             } catch let caughtError {
                 self.onDataFailure(caughtError.localizedDescription)
             }

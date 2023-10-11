@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct CricketMatchBaseModel: Decodable {
+public struct CricketMatchBaseModel: Decodable {
     
     /*
      "Matchdetail"
@@ -32,7 +32,7 @@ struct CricketMatchBaseModel: Decodable {
         case notes = "Notes"
     }
     
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         let container = try? decoder.container(keyedBy: CricketMatchBaseModelKey.self)
         self.matchDetail = try? container?.decodeIfPresent(CricketMatchDetailModel.self, forKey: .matchDetail)
         self.nuggets = try? container?.decodeIfPresent([String].self, forKey: .nuggets)

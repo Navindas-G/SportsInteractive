@@ -7,13 +7,14 @@
 
 import Foundation
 
-class CricketMatchDatasource {
+public class CricketMatchDatasource {
     
     let networkServices = NetworkServices()
     
-    func getCricketMatchesData(for urlString: String) async throws -> CricketMatchBaseModel {
+    func getCricketMatchesData(for urlString: String) async throws -> CricketMatchBaseModel? {
         let data = try await self.networkServices.getData(for: urlString)
-        let model = try JSONDecoder().decode(CricketMatchBaseModel.self, from: data)
+        guard let modelData = data else {return nil}
+        let model = try JSONDecoder().decode(CricketMatchBaseModel.self, from: modelData)
 //        debugPrint("Model : \(model)")
         return model
     }
