@@ -26,7 +26,8 @@ class MatchDetailTableViewCell: UITableViewCell {
         self.mainView.layer.shadowOpacity = 2.0
         self.mainView.layer.masksToBounds = false
         self.mainView.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
-        
+        self.mainView.layer.borderColor = UIColor.systemCyan.cgColor
+        self.mainView.layer.borderWidth = 1.0
         self.selectionStyle = .none
     }
 

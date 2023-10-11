@@ -1,0 +1,20 @@
+PODS:
+  - JHSpinner (0.2.1)
+  - JSSAlertView (5.0.2)
+
+DEPENDENCIES:
+  - JHSpinner
+  - JSSAlertView
+
+SPEC REPOS:
+  trunk:
+    - JHSpinner
+    - JSSAlertView
+
+SPEC CHECKSUMS:
+  JHSpinner: bf7cc91a7e0ccad6336d2b0a3429dd34e7325e65
+  JSSAlertView: 18345e37d8295827428c12b773b6d75d0dfd0b28
+
+PODFILE CHECKSUM: dd93188c02b80aa318ae7eabbda1a6f1fcdfc02d
+
+COCOAPODS: 1.11.3

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAnalytics
 
 class PlayerInfoVC: UIViewController {
     
@@ -44,6 +45,13 @@ class PlayerInfoVC: UIViewController {
         self.segmentedControl.setTitle("All Players", forSegmentAt: 0)
         self.segmentedControl.setTitle(self.teamOneName, forSegmentAt: 1)
         self.segmentedControl.setTitle(self.teamTwoName, forSegmentAt: 2)
+        
+        self.segmentedControl.setTitleTextAttributes([NSAttributedString.Key.font : UIFont(name: "Rubik-Medium", size: 15.0) ?? UIFont.systemFont(ofSize: 15.0, weight: .medium)], for: .normal)
+        
+        Analytics.logEvent("Teams played", parameters: [
+            "First team name" : teamOneName,
+            "Second team name" : teamTwoName
+        ])
     }
 }
 
@@ -70,17 +78,17 @@ extension PlayerInfoVC: UITableViewDataSource {
         var isCaptain: Bool = false
         
         if self.selectedSegment == 1 {
-            teamName = self.teamOneList[indexPath.row].teamShortName ?? ""
+            teamName = self.teamOneList[indexPath.row].teamFullName ?? ""
             playerName = self.teamOneList[indexPath.row].fullName ?? ""
             isKeeper = self.teamOneList[indexPath.row].isKeeper ?? false
             isCaptain = self.teamOneList[indexPath.row].isCaptain ?? false
         } else if self.selectedSegment == 2 {
-            teamName = self.teamTwoList[indexPath.row].teamShortName ?? ""
+            teamName = self.teamTwoList[indexPath.row].teamFullName ?? ""
             playerName = self.teamTwoList[indexPath.row].fullName ?? ""
             isKeeper = self.teamTwoList[indexPath.row].isKeeper ?? false
             isCaptain = self.teamTwoList[indexPath.row].isCaptain ?? false
         } else {
-            teamName = self.playerList[indexPath.row].teamShortName ?? ""
+            teamName = self.playerList[indexPath.row].teamFullName ?? ""
             playerName = self.playerList[indexPath.row].fullName ?? ""
             isKeeper = self.playerList[indexPath.row].isKeeper ?? false
             isCaptain = self.playerList[indexPath.row].isCaptain ?? false

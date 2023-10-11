@@ -109,8 +109,8 @@ struct JSONCodingKeys: CodingKey {
 extension [String:Any] {
     func getTeamsName() -> String {
         var namesSeparatedWithComma: String = ""
-        for (key, value) in self {
-            debugPrint("Key : \(key)")
+        for (_, value) in self {
+//            debugPrint("Key : \(key)")
             guard let dict = value as? [String:Any] else {
                 return ""
             }

@@ -31,6 +31,9 @@ class PlayerInfoTableViewCell: UITableViewCell {
         self.playerNameLabel.text = playerName
         self.playerTagLabel.isHidden = !(isKeeper || isCaptain)
         
+        self.playerNameLabel.textColor = .systemCyan
+        self.playerTagLabel.textColor = .systemRed
+        
         if isKeeper && isCaptain {
             self.playerTagLabel.text = "c & wk"
         } else if isKeeper {

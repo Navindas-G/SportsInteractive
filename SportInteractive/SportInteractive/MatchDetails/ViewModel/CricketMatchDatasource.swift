@@ -14,7 +14,7 @@ class CricketMatchDatasource {
     func getCricketMatchesData(for urlString: String) async throws -> CricketMatchBaseModel {
         let data = try await self.networkServices.getData(for: urlString)
         let model = try JSONDecoder().decode(CricketMatchBaseModel.self, from: data)
-        debugPrint("Model : \(model)")
+//        debugPrint("Model : \(model)")
         return model
     }
 }
